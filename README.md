@@ -1,4 +1,8 @@
-# CSE 151A 
+# CSE 151A Nursing Homes
+
+## Project Abstract
+
+## How We Will Preprocess Data
 <a target="_blank" href="https://colab.research.google.com/github/Preellis/151A-Nursing-Homes">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
