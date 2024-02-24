@@ -24,4 +24,4 @@ An artificial neural network will be better suited for our research question bec
 ## Deep Neural Network
 We will later transition to a deep neural network, which has more hidden layers than a shallow artificial neural network. Adding more layers will allow it to recognize more intricate patterns in the data. A DNN may overfit to the data if it is too complex for the data so it will be a good tool for comparison with a shallow ANN.
 # Conclusion
-Our linear regression model is not sufficient enough for our data because it has too many independent variables so the best solution would be to use a different model like a neural network. 
+Our linear regression model is not sufficient enough for our data because it has too many independent variables causing undercutting so the best solution to improve this data would be to do feature expansion. In the next milestone we will explore Neural Network models to find a better fit for our data. 
