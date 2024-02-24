@@ -16,7 +16,7 @@ We will remove non-numerical columns (except for date which will be integer conv
 </a>
 
 # Model 1: Linear Regression
-Our training mean squared error for the linear regression model is 874.67, while our testing mean squared error is 1601.21. This means that our model is overfitted since the MSE for training is significantly smaller than our MSE for testing. This overfitting is caused by the model "memorizing" the training data, so it does not have high accuracy when predicting using unseen data, which would be our testing data in this case.
+Our training mean squared error for the linear regression model is 874.67, while our testing mean squared error is 1601.21. This means that our model is underfitted since the MSE for training and testing are both very high. This underfitting is caused by our dataset having several dependent variables with complex relationships between them and our independent variable, and the linear regression model is not best suited for those types of complex relationships.
 
 # Next Two Models
 ## Artificial Neural Network
