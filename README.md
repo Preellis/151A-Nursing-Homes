@@ -9,14 +9,16 @@ Nursing homes have a variety of factors that contribute to the number of COVID-1
 We found the data column descriptions available [here](https://data.cms.gov/sites/default/files/2023-08/COVID-19%20Nursing%20Home%20Data%20Dictionary.pdf). For the non underfilled columns (which we dropped), we were able to get nearly 2 million completed data points of the roughly 3 million available. We decided against analyzing the non numerical data as there were too many categories to one hot encode and integer encoding did not make sense. Much of the features/target are either multimodal or weighted towards zero (particularly for our target of weekly resident cases per 1000 which is mostly 0s). We did realize some of our targets were over 1000 per 1000 but this is actually expected due to high turnover and the base '1000' being the number of occupied beds. Pairplots and correlation matrices are availble in the linked notebook for our data. 
 
 ## How We Will Preprocess Data
-We will remove non-numerical columns (except for date which will be integer converted), drop majority empty columns, and drop all-time totals and columns already used in calculated columns. To deal with null/incomplete values, we will remove rows with incomplete or null data since we have plenty of data and over 50% of it is complete for the remaining columns. To make sure that the data works well when we apply it to networks, we will be MinMax scaling all the features and the expected outputs since the features/output are either multi modal or are skewed making them non normal.
+We will remove non-numerical columns (except for date which will be integer converted), drop majority empty columns, and drop all-time totals and columns already used in calculated columns. To deal with null/incomplete values, we will remove rows with incomplete or null data since we have plenty of data and over 50% of it is complete for the remaining columns. To make sure that the data works well when we apply it to networks, we will be MinMax scaling all the features and the expected outputs since the features/output are either multi-modal or are skewed making them non-normal.
 
 <a target="_blank" href="https://colab.research.google.com/github/Preellis/151A-Nursing-Homes">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-# How Our Linear Regression Model Fits in the Fitting Graph
+# Model 1: Linear Regression
+Our training mean squared error for the linear regression model is 874.67, while our testing mean squared error is 1601.21. This means that our model is overfitted since the MSE for training is significantly smaller than our MSE for testing. This overfitting is caused by the model "memorizing" the training data, so it does not have high accuracy when predicting using unseen data, which would be our testing data in this case.
 
 # Next Two Models
-
+## Artificial Neural Network
+## Deep Neural Network
 # Conclusion
