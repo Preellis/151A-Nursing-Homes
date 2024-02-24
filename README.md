@@ -22,3 +22,4 @@ Our training mean squared error for the linear regression model is 874.67, while
 ## Artificial Neural Network
 ## Deep Neural Network
 # Conclusion
+Our linear regression model is not sufficient enough for our data because it has too many independent variables so the best solution would be to use a different model like a neural network. 
