@@ -19,7 +19,9 @@ We will remove non-numerical columns (except for date which will be integer conv
 Our training mean squared error for the linear regression model is 874.67, while our testing mean squared error is 1601.21. This means that our model is underfitted since the MSE for training and testing are both very high. This underfitting is caused by our dataset having several dependent variables with complex relationships between them and our independent variable, and the linear regression model is not best suited for those types of complex relationships.
 
 # Next Two Models
-## Artificial Neural Network
+## Shallow Artificial Neural Network
+An artificial neural network will be better suited for our research question because it can handle complex relationships between dependent variables and an independent variable. It has a hidden layer and uses inputs and weights, which allows it to learn patterns in data. Using non-linear activation functions will also help discover these patterns, which is something linear regression cannot do.
 ## Deep Neural Network
+We will later transition to a deep neural network, which has more hidden layers than a shallow artificial neural network. Adding more layers will allow it to recognize more intricate patterns in the data. A DNN may overfit to the data if it is too complex for the data so it will be a good tool for comparison with a shallow ANN.
 # Conclusion
 Our linear regression model is not sufficient enough for our data because it has too many independent variables so the best solution would be to use a different model like a neural network. 
