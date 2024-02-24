@@ -14,3 +14,9 @@ We will remove non-numerical columns (except for date which will be integer conv
 <a target="_blank" href="https://colab.research.google.com/github/Preellis/151A-Nursing-Homes">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
+
+# How Our Linear Regression Model Fits in the Fitting Graph
+
+# Next Two Models
+
+# Conclusion
