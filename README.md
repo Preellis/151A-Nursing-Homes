@@ -1,7 +1,7 @@
 # CSE 151A Nursing Homes
 [Notebook](https://github.com/Preellis/151A-Nursing-Homes/blob/main/main.ipynb)
 
-[Our Collab](https://colab.research.google.com/drive/1v6JM4J46na728U9QQtk0ckYcxExGIDF8?usp=sharing)
+[Our Colab](https://colab.research.google.com/drive/1v6JM4J46na728U9QQtk0ckYcxExGIDF8?usp=sharing)
 
 
 ## Project Abstract
