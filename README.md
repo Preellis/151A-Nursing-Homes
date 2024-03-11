@@ -26,7 +26,7 @@ Our data seemed to work for the new model (a ANN with 2 equal sized hidden layer
 
 ![image](https://github.com/Preellis/151A-Nursing-Homes/assets/102556688/43c2562d-7f83-4163-8acb-ca55f351ed34)
 
- **Fig 1**:*Training and Validation Error over time for the Shallow Artificial Neural Network*
+ **Fig 1**: *Training and Validation Error over time for the Shallow Artificial Neural Network*
 ## Next Model
 We are still planning to use a deep neural network for our third model which has more hidden layers than a shallow artificial neural network. Adding more layers will allow it to recognize more intricate patterns in the data which might help it avoid underfitting and generate a lower loss. Hopefully the added complexity will allow us to get more accurate prediction and lower our relatively high current loss. 
 
