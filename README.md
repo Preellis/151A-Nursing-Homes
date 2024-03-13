@@ -28,6 +28,8 @@ Our data seemed to work for the new model (an ANN with 2 equal-sized hidden laye
 
  **Fig 1**: *Training and Validation Error over time for the Simple Artificial Neural Network*
 
+ # Model #: Deep Artificial Neural Network
+
 
 ## Results
 
