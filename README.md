@@ -14,19 +14,19 @@ We found the data column descriptions available [here](https://data.cms.gov/site
 ### Pre-Processing
 We will remove non-numerical columns (except for date which will be integer converted), drop majority empty columns, and drop all-time totals and columns already used in calculated columns. To deal with null/incomplete values, we will remove rows with incomplete or null data since we have plenty of data and over 50% of it is complete for the remaining columns. To make sure that the data works well when we apply it to networks, we will be MinMax scaling all the features and the expected outputs since the features/output are either multi-modal or are skewed making them non-normal.
 
-#### Model 1: Linear Regression 
+### Model 1: Linear Regression 
 
 
 
 
-#### Model 2: Simple Artificial Neural Network (Milestone 4):
+### Model 2: Simple Artificial Neural Network (Milestone 4):
 Our data seemed to work for the new model (an ANN with 2 equal-sized hidden layers), and we decided to stick with MSE as our loss since it seems like the most useful for our data considering we are trying to predict the number of cases per week per 1000 residents. We did add a partition of the data for a validation set such that we could perform hyperparameter tuning. We saw 802.16 training MSE, 768.67 validation MSE, and 807.70 testing MSE with the model. The training, validation, and testing errors are fairly close suggesting they are not overfitting but they are still somewhat high suggesting it might be underfitting. Taking a look at the Training vs Validation error graph as seen in Fig 1, it seems to support that we are still underfitting since both training and validation errors continue to decrease (though fairly slowly) during the training epochs.  Both not training for enough epochs and the relatively low complexity of the model could be contributing to the model underfitting. Compared to the first model though, it is definitely less underfit (more towards the center of the fitting graph) as we see lower testing and training errors. In terms of optimization, we performed relatively course-grained hyperparameter tuning searching for the best units per hidden layer, activation function, and learning rate. We found that 14 units per hidden layer, sigmoid activation, and a learning rate of 0.01 resulted in the lowest validation loss.
 
 ![image](https://github.com/Preellis/151A-Nursing-Homes/assets/102556688/43c2562d-7f83-4163-8acb-ca55f351ed34)
 
  **Fig 1**: *Training and Validation Error over time for the Simple Artificial Neural Network*
 
- #### Model #3: Deep Artificial Neural Network
+ ### Model #3: Deep Artificial Neural Network
 
 
 ## Results
