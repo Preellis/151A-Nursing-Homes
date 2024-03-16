@@ -157,7 +157,7 @@ Our training mean squared error for the linear regression model is 954.97, while
 
 ![image](https://cdn.discordapp.com/attachments/1197674736608628779/1217642064607580240/image.png?ex=6604c48a&is=65f24f8a&hm=be24418faa62dc8106b08be11081ca7ab647d9861128c704167c28a529c5b1c1&)
 
- **Fig 6**: *The Training and Validation Error over time (epochs) for our Simple Artificial Neural Network*
+ **Fig 6**: *The Training and Validation Error over time (epochs) for our Simple Artificial Neural Network in predicting the cases per week per 1000 occupied beds in nursing homes*
 
 ### Model 3: Deep Artificial Neural Network with Dropout
 
@@ -174,7 +174,7 @@ We compared all the three model’s performance results on the datasets in a his
 
 ![Model Performance](https://cdn.discordapp.com/attachments/1217549861935775885/1217627186240950302/image.png?ex=6604b6af&is=65f241af&hm=2ea73d679df107fd75d0013eba20ea87e9af5ec54b1107b68c734c269c85f5f0&)
 
-**Fig 8**: *The various mean squared errors for each model (linear regression, simple artificial neural network, and deep neural network with dropout) in predicting the number of COVID-19 cases per week per 1000 occupied beds in nursing homes.*
+**Fig 8**: *The various mean squared errors (training, validation and testing) for each model (linear regression, simple artificial neural network, and deep neural network with dropout) in predicting the number of COVID-19 cases per week per 1000 occupied beds in nursing homes.*
 
 ## Discussion
 
