@@ -37,7 +37,7 @@ We removed non-numerical columns (except for date which was integer converted), 
 | 1476017 |                 28.57 |
 |  860192 |                 20.2  |
 ```
- **Table 2**: *A random sample of the ‘output’ of our cleaned dataframe, representing the weekly COVID-19 cases per thousand occupied beds for the five random columns. This matches up with Table 1.   *
+ **Table 2**: *A random sample of the ‘output’ of our cleaned dataframe, representing the weekly COVID-19 cases per thousand occupied beds for the five random columns. This matches up with Table 1.*
 ### Model 1: Linear Regression
 We chose our first model to be linear regression because we wanted to examine if there was a linear relationship between various factors of a nursing home and how many weekly COVID cases for every thousand occupied beds.
 ```
@@ -80,7 +80,7 @@ Our training mean squared error for the linear regression model is 954.97, while
 
 We saw the following training and validation error throughout the epochs as seen in Fig. 4. This resulted in a Training MSE of 793.34, a validation MSE of 763.74 and testing MSE of 801.45. 
  
-[image](https://cdn.discordapp.com/attachments/1197674736608628779/1217642203820724224/image.png?ex=6604c4ac&is=65f24fac&hm=88b1acae1fe002eeafd1cf268daea10381d9cb01421878a4c450ae4c1b83ec92&)
+![image](https://cdn.discordapp.com/attachments/1197674736608628779/1217642203820724224/image.png?ex=6604c4ac&is=65f24fac&hm=88b1acae1fe002eeafd1cf268daea10381d9cb01421878a4c450ae4c1b83ec92&)
 **Fig 4**: *The Training and Validation Error over time (epochs) for our Deep Artificial Neural Network*
 
 
@@ -107,8 +107,7 @@ For the second model we built a Simple Artificial Neural Network. This model wil
  	When creating the model, we wanted to better grasp the and decided to use tuning to find out the best hypermeter set. However, we decided to limit the amount of combinations to a relatively small number by limiting the number of choices of the nodes, learning rate, and activation function, as too many choices resulted in a really long runtime. After research we agreed on the number of nodes should at least be (input node + output node)/2 = (13+1)/2 = 7 nodes, thus we gave our tuner choice of 7, 14, 28. We also select choice of learning rate of 0.1, 0.01, 0.001 and common activation functions, making an combination of 3*3*3 = 27.(our maximum trial). After running the tuner we get the best-performing set of hyperparameters among the 27 sets, and the result is quite believable: the performance got better than model1.
 
 ### Model 3: Deep Artificial Neural Network
-
-	For our third model, we built a Deep Artificial Neural Network. Analyzing our simple neural network showed us that our model was still underfitted, meaning that we needed to increase the complexity of our model. This was our reason for doubling the hidden dense layers and epochs to allow the network to better model the complex relationships. We decided to keep similar hyperparameter options as our second model, resulting in a slightly better performance than before.
+For our third model, we built a Deep Artificial Neural Network. Analyzing our simple neural network showed us that our model was still underfitted, meaning that we needed to increase the complexity of our model. This was our reason for doubling the hidden dense layers and epochs to allow the network to better model the complex relationships. We decided to keep similar hyperparameter options as our second model, resulting in a slightly better performance than before.
 
 ## Conclusion
 Our linear regression model is not sufficient enough for our data because it has too many independent variables causing underfitting so the best solution to improve the performance would be to do feature expansion to explore non-linear options. In the next milestone, we will explore Neural Network models to find a better-fitting model.
